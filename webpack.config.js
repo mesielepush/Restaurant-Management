@@ -10,10 +10,14 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
   },
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+  },
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
-      title: 'Development',
+      title: 'Restaurant',
+      
     }),
 
   ],
