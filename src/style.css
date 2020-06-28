@@ -12,27 +12,10 @@ body {
 
 .nav {
   width: 100%;
-  height: 65px;
+  height: 75px;
   position: fixed;
   line-height: 65px;
   text-align: center;
-}
-
-.nav div.logo {
-  float: left;
-  width: auto;
-  height: auto;
-  padding-left: 3rem;
-}
-
-.nav div.logo a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2.5rem;
-}
-
-.nav div.logo a:hover {
-  color: #00E676;
 }
 
 .nav div.main_list {
@@ -194,6 +177,36 @@ body {
 .navTrigger.active i:nth-child(3) {
   -webkit-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
+}
+
+.logo {
+  float: left;
+  height: 150px;
+  width: 250px;
+  background-image: url("image/restaurant_logo.png") !important;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  border-radius: 25px;
+}
+
+.logo_short {
+  float: left;
+  height: 150px;
+  width: 250px;
+  background-image: url("image/logo_short.png");
+  background-color: rgba(207, 24, 24, 0.3);
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  border-radius: 25px;
 }
 
 @-webkit-keyframes inM {
