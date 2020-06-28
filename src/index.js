@@ -1,7 +1,13 @@
 import navbar from './navbar'
+import home from  './home'
 navbar()
+home()
 
-window.scroll(function(){
+
+
+
+
+/* window.scroll(function(){
     if (document.scrollTop() > 50){
         var logo_place = document.getElementsByClassName("logo");
         var navb = document.getElementsByClassName('nav')
@@ -20,4 +26,4 @@ navTrigger.click(function () {
     document.getElementById("mainListDiv").toggleClass("show_list");
     document.getElementById("mainListDiv").fadeIn();
 
-});
+}); */
