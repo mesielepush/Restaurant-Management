@@ -23,19 +23,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
+        
         $(window).scroll(function() {
-            var logo_place = document.getElementsByClassName("logo");
-            if ($(document).scrollTop() >= 75) {
-                $('.nav').addClass('affix');
+            if ($(document).scrollTop() > 50) {
+                var logo_place = document.getElementsByClassName("logo");
+                $('.nav').addClass('back_nav');
                 $(logo_place).removeClass('logo').addClass("logo_short");
-            } else if ($(document).scrollTop() < 75){
-                $('.nav').removeClass('affix');
-                $(logo_place).removeClass('logo').addClass("logo_short");
-                $(logo_place).className = 'logo_short';
-                console.log('I change that... what???')
+            } else {
+                var logo_place = document.getElementsByClassName("logo_short");
+                $(logo_place).removeClass("logo_short").addClass('logo');
+                $('.nav').removeClass('back_nav');
             }
         });
-            $('.navTrigger').click(function () {
+        $('.navTrigger').click(function () {
             $(this).toggleClass('active');
             $("#mainListDiv").toggleClass("show_list");
             $("#mainListDiv").fadeIn();
