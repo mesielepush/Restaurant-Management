@@ -1,10 +1,12 @@
-import menu from './menu'
-import navbar from './navbar'
-import contact from './contact'
-const home = () =>{
-    const content = document.getElementById('content');
-    
-    const template = `
+/* eslint-disable import/no-cycle */
+import navbar from './navbar';
+import contact from './contact';
+import menu from './menu';
+
+const home = () => {
+  const content = document.getElementById('content');
+
+  const template = `
                     <section class="front_page">
                         <div class="front_copy">
                             The tastiest, the hottests, the best...
@@ -25,20 +27,16 @@ const home = () =>{
                     </div>                            
                     </div>
     `;
-    content.innerHTML += template;
-
-    const menus = document.getElementById('menu')
-    menus.addEventListener('click', () => {
-        navbar();
-        menu();
-    });
-    const cont = document.getElementById('contact')
-    cont.addEventListener('click', () => {
-        navbar();
-        contact();
-    });
-    
-    
-    
-}
+  content.innerHTML += template;
+  const menus = document.getElementById('menu');
+  menus.addEventListener('click', () => {
+    navbar();
+    menu();
+  });
+  const cont = document.getElementById('contact');
+  cont.addEventListener('click', () => {
+    navbar();
+    contact();
+  });
+};
 export default home;

@@ -1,8 +1,8 @@
-const navbar = () =>{
-    const content = document.getElementById('content');
-    
-    content.innerHTML = '';
-    const template = `
+const navbar = () => {
+  const content = document.getElementById('content');
+
+  content.innerHTML = '';
+  const template = `
                         <nav class="nav">
                             <div class="container">
                                 <div class="logo">
@@ -24,10 +24,7 @@ const navbar = () =>{
                         </nav>
                         
                         `;
-    content.innerHTML += template;
-    
-    
-    
+  content.innerHTML += template;
 };
 
 export default navbar;

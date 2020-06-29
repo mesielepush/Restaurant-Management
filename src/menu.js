@@ -1,10 +1,12 @@
-import home from './home'
-import navbar from './navbar'
-import contact from './contact'
-const menu = () =>{
-    const content = document.getElementById('content');
-    
-    var template = `
+/* eslint-disable import/no-cycle */
+import navbar from './navbar';
+import contact from './contact';
+import home from './home';
+
+const menu = () => {
+  const content = document.getElementById('content');
+
+  const template = `
                    
                     <section class="front_menu">
                         <div class="pozole" type="button" data-toggle="modal" data-target="#pozole_modal">
@@ -86,17 +88,16 @@ const menu = () =>{
                             
                         </div>                            
                     </div> `;
-    content.innerHTML += template;
-    const about = document.getElementById('about')
-    about.addEventListener('click', () => {
-        navbar();
-        home();
-    });
-    const cont = document.getElementById('contact')
-    cont.addEventListener('click', () => {
-        navbar();
-        contact();
-    });
-    
-}
-export default menu
+  content.innerHTML += template;
+  const cont = document.getElementById('contact');
+  cont.addEventListener('click', () => {
+    navbar();
+    contact();
+  });
+  const about = document.getElementById('about');
+  about.addEventListener('click', () => {
+    navbar();
+    home();
+  });
+};
+export default menu;

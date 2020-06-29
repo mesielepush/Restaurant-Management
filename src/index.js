@@ -6,11 +6,6 @@ navbar();
 home();
 
 
-
-
-
-
-
 /* window.scroll(function(){
     if (document.scrollTop() > 50){
         var logo_place = document.getElementsByClassName("logo");
