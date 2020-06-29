@@ -266,7 +266,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
-    background-color: black 10, 1, 1;
+    background-color: black;
   }
   .container {
     margin: 0;
@@ -317,11 +317,33 @@ body {
     -webkit-box-shadow: 0px 3px 39px 19px rgba(250, 250, 250, 0.75);
     box-shadow: 0px 3px 39px 19px rgba(255, 255, 255, 0.75);
   }
+  .home_info {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    height: 45rem;
+    color: white;
+    background-color: black;
+  }
+  .home_in_info {
+    margin-top: 3rem;
+  }
+  .home_in_info span {
+    font-size: 4rem;
+    position: relative;
+    top: -2rem;
+    padding-bottom: 1rem;
+    font-family: 'Courgette', cursive;
+  }
+  .home_in_info p {
+    font-size: 2.4rem;
+    text-align: right;
+  }
 }
 
 @media screen and (max-width: 768px) {
   body {
-    background-color: black 22, 1, 1;
+    background-color: black;
   }
   .navTrigger {
     display: block;
@@ -364,22 +386,16 @@ body {
   .nav div.media_button {
     display: block;
   }
-  .front_copy {
-    color: #e4d8db !important;
-    left: 27rem !important;
-    width: 35rem !important;
-    top: 30rem !important;
-    font-size: 4rem !important;
-  }
   .home {
     height: 1150px;
   }
   .front_copy {
     color: #f5f4f4 !important;
-    left: 35rem !important;
+    left: 14rem !important;
     width: 50rem !important;
-    top: 28rem !important;
+    top: 32rem !important;
     font-size: 6rem !important;
+    text-shadow: 9px 2px 7px rgba(41, 5, 2, 0.75);
   }
   .front_menu .pozole, .front_menu .tacos, .front_menu .mole {
     left: 12rem;
@@ -416,6 +432,28 @@ body {
   .front_menu .mole:hover, .front_menu .tacos:hover, .front_menu .pozole:hover {
     -webkit-box-shadow: 0px 3px 39px 19px rgba(250, 250, 250, 0.75);
     box-shadow: 0px 3px 39px 19px rgba(255, 255, 255, 0.75);
+  }
+  .home_info {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    height: 45rem;
+    color: white;
+    background-color: black;
+  }
+  .home_in_info {
+    margin-top: 2rem;
+  }
+  .home_in_info span {
+    font-size: 4rem;
+    position: relative;
+    top: -2rem;
+    padding-bottom: 1rem;
+    font-family: 'Courgette', cursive;
+  }
+  .home_in_info p {
+    font-size: 2rem;
+    text-align: right;
   }
 }
 
@@ -510,7 +548,7 @@ body {
 
 .front_copy {
   position: absolute;
-  top: 30rem;
+  top: 40rem;
   right: 15rem;
   width: 75rem;
   height: 46rem;

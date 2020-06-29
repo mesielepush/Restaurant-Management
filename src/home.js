@@ -20,7 +20,7 @@ const home = () =>{
                             <p>This could be fake you know? </p>
                             <p>Specially in this times: pandemics, massive public demonstrations...</p>
                             <p> I mean, you shouldn't trust this whole "reality" thing amirite?</p>
-                            <p>Just buy or food ok? It's nice and all...</p>
+                            <p>Just buy or food ok? It's nice and spicy...</p>
                         </div>
                     </div>                            
                     </div>
