@@ -1,4 +1,6 @@
-
+import menu from './menu'
+import navbar from './navbar'
+import contact from './contact'
 const home = () =>{
     const content = document.getElementById('content');
     
@@ -24,6 +26,17 @@ const home = () =>{
                     </div>
     `;
     content.innerHTML += template;
+
+    const menus = document.getElementById('menu')
+    menus.addEventListener('click', () => {
+        navbar();
+        menu();
+    });
+    const cont = document.getElementById('contact')
+    cont.addEventListener('click', () => {
+        navbar();
+        contact();
+    });
     
     
     
