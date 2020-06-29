@@ -58,6 +58,10 @@ body {
   color: #00E676;
 }
 
+.home {
+  height: 450px;
+}
+
 .front_page {
   width: 100%;
   height: 100vh;
@@ -153,9 +157,60 @@ body {
   transition: all 0.4s ease;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  body {
+    background-color: black;
+  }
+  .home {
+    height: 1200px;
+  }
+  .front_menu .pozole, .front_menu .tacos, .front_menu .mole {
+    left: 42rem;
+    width: 60rem;
+    border-radius: 25px;
+    -webkit-box-shadow: 3px 0px 36px 8px rgba(68, 66, 73, 0.5);
+    box-shadow: 3px 0px 36px 8px rgba(68, 66, 73, 0.5);
+  }
+  .front_menu .pozole {
+    top: 60rem;
+  }
+  .front_menu .pozole img {
+    border-radius: 25px;
+    max-height: 42.5rem !important;
+  }
+  .front_menu .tacos {
+    top: 65rem;
+    height: 28.5rem;
+  }
+  .front_menu .tacos img {
+    border-radius: 25px;
+    height: 28.5rem !important;
+    width: 60rem;
+  }
+  .front_menu .mole {
+    top: 70rem;
+    height: 28.5rem;
+  }
+  .front_menu .mole img {
+    border-radius: 25px;
+    height: 28.5rem !important;
+    width: 60rem;
+  }
+  .front_menu .mole:hover, .front_menu .tacos:hover, .front_menu .pozole:hover {
+    -webkit-box-shadow: 0px 3px 39px 19px rgba(250, 250, 250, 0.75);
+    box-shadow: 0px 3px 39px 19px rgba(255, 255, 255, 0.75);
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: black 10, 1, 1;
+  }
   .container {
     margin: 0;
+  }
+  .home {
+    height: 1150px;
   }
   .front_copy {
     color: #f5f4f4 !important;
@@ -164,9 +219,48 @@ body {
     top: 28rem !important;
     font-size: 6rem !important;
   }
+  .front_menu .pozole, .front_menu .tacos, .front_menu .mole {
+    left: 22rem;
+    width: 50rem;
+    border-radius: 25px;
+    -webkit-box-shadow: 3px 0px 36px 8px rgba(68, 66, 73, 0.5);
+    box-shadow: 3px 0px 36px 8px rgba(68, 66, 73, 0.5);
+  }
+  .front_menu .pozole {
+    top: 60rem;
+  }
+  .front_menu .pozole img {
+    border-radius: 25px;
+    max-height: 42.5rem !important;
+  }
+  .front_menu .tacos {
+    top: 65rem;
+    height: 28.5rem;
+  }
+  .front_menu .tacos img {
+    border-radius: 25px;
+    height: 28.5rem !important;
+    width: 60rem;
+  }
+  .front_menu .mole {
+    top: 70rem;
+    height: 28.5rem;
+  }
+  .front_menu .mole img {
+    border-radius: 25px;
+    height: 28.5rem !important;
+    width: 60rem;
+  }
+  .front_menu .mole:hover, .front_menu .tacos:hover, .front_menu .pozole:hover {
+    -webkit-box-shadow: 0px 3px 39px 19px rgba(250, 250, 250, 0.75);
+    box-shadow: 0px 3px 39px 19px rgba(255, 255, 255, 0.75);
+  }
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-color: black 22, 1, 1;
+  }
   .navTrigger {
     display: block;
   }
@@ -214,6 +308,52 @@ body {
     width: 35rem !important;
     top: 30rem !important;
     font-size: 4rem !important;
+  }
+  .home {
+    height: 1150px;
+  }
+  .front_copy {
+    color: #f5f4f4 !important;
+    left: 35rem !important;
+    width: 50rem !important;
+    top: 28rem !important;
+    font-size: 6rem !important;
+  }
+  .front_menu .pozole, .front_menu .tacos, .front_menu .mole {
+    left: 12rem;
+    width: 50rem;
+    border-radius: 25px;
+    -webkit-box-shadow: 3px 0px 36px 8px rgba(68, 66, 73, 0.5);
+    box-shadow: 3px 0px 36px 8px rgba(68, 66, 73, 0.5);
+  }
+  .front_menu .pozole {
+    top: 60rem;
+  }
+  .front_menu .pozole img {
+    border-radius: 25px;
+    max-height: 42.5rem !important;
+  }
+  .front_menu .tacos {
+    top: 65rem;
+    height: 28.5rem;
+  }
+  .front_menu .tacos img {
+    border-radius: 25px;
+    height: 28.5rem !important;
+    width: 60rem;
+  }
+  .front_menu .mole {
+    top: 70rem;
+    height: 28.5rem;
+  }
+  .front_menu .mole img {
+    border-radius: 25px;
+    height: 28.5rem !important;
+    width: 60rem;
+  }
+  .front_menu .mole:hover, .front_menu .tacos:hover, .front_menu .pozole:hover {
+    -webkit-box-shadow: 0px 3px 39px 19px rgba(250, 250, 250, 0.75);
+    box-shadow: 0px 3px 39px 19px rgba(255, 255, 255, 0.75);
   }
 }
 

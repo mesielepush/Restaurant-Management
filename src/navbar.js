@@ -1,4 +1,4 @@
-import menus from './menu'
+import menu from './menu'
 const navbar = () =>{
     const content = document.getElementById('content');
     

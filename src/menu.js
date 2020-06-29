@@ -1,3 +1,5 @@
+import navbar from './navbar'
+import home from './home'
 const menu = () =>{
     const content = document.getElementById('content');
     
@@ -78,11 +80,16 @@ const menu = () =>{
 
 
 
-                    <div class = 'home' style="height: 450px">
+                    <div class = 'home' >
                         <div class="container">
                             
                         </div>                            
                     </div> `;
     content.innerHTML += template;
+    const about = document.getElementById('about')
+    about.addEventListener('click', ()=>{
+        navbar();
+        home();
+    } );
 }
 export default menu
