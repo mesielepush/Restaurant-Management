@@ -1,7 +1,5 @@
-import navbar from './navbar'
-import home from  './home'
-import contact from './contact'
-
+import navbar from './navbar';
+import home from './home';
 
 navbar();
 home();

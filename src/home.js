@@ -1,6 +1,4 @@
-import navbar from './navbar'
-import menu from './menu'
-import contact from './contact'
+
 const home = () =>{
     const content = document.getElementById('content');
     
@@ -25,12 +23,7 @@ const home = () =>{
                     </div>                            
                     </div>
     `;
-    content.innerHTML += template;
-    const menus = document.getElementById('menu')
-    menus.addEventListener('click', () => {
-        navbar();
-        menu();
-    });
+    
 
 }
 export default home;

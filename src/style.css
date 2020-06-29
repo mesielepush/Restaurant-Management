@@ -521,11 +521,8 @@ body {
   background-image: url("image/restaurant_logo.png") !important;
   background-color: rgba(0, 0, 0, 0.3);
   background-position: center;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   background-size: cover;
-  /* Resize the background image to cover the entire container */
   border-radius: 25px;
 }
 
@@ -535,14 +532,10 @@ body {
   top: 0.4rem;
   height: 70px !important;
   width: 125px;
-  background-image: url("image/logo_short.png");
+  background-image: url("image/logo_short.png") !important;
   background-color: rgba(26, 2, 2, 0.3);
   background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
   background-size: cover;
-  /* Resize the background image to cover the entire container */
   border-radius: 25px;
 }
 
