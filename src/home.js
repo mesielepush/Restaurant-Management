@@ -1,4 +1,4 @@
-
+import menu from './menu'
 const home = () =>{
     const content = document.getElementById('content');
     
@@ -23,7 +23,11 @@ const home = () =>{
                     </div>                            
                     </div>
     `;
-    
-
+    content.innerHTML += template;
+    const menus = document.getElementById('menu')
+    menus.addEventListener('click', () => {
+        navbar();
+        menu();
+    });
 }
 export default home;

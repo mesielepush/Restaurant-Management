@@ -25,6 +25,7 @@ const contact = () =>{
                             
                         </div>                            
                     </div> `;
+    content.innerHTML += template;
 
 }
 export default contact;

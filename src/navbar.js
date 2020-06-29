@@ -1,4 +1,4 @@
-import navbar from './navbar'
+import menu from './menu'
 import home from  './home'
 import contact from './contact'
 const navbar = () =>{
@@ -29,23 +29,7 @@ const navbar = () =>{
                         `;
     content.innerHTML += template;
     
-    const about = document.getElementById('about')
-    about.addEventListener('click', ()=>{
-        navbar();
-        home();
-    } );
     
-    const menus = document.getElementById('menu')
-    menus.addEventListener('click', () => {
-        navbar();
-        menu();
-    });
-    
-    const cont = document.getElementById('contact')
-    cont.addEventListener('click', () => {
-        navbar();
-        contact();
-    });
 };
 
 export default navbar;
