@@ -15,7 +15,7 @@ const home = () =>{
                     </div>
     `;
     content.innerHTML += template;
-
+    
 
 }
 export default home;

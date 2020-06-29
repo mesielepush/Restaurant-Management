@@ -1,10 +1,23 @@
 import navbar from './navbar'
 import home from  './home'
-navbar()
-/* home() */
+import menu from './menu'
 
+navbar();
+home();
 
+const menus = document.getElementById('menu')
+menus.addEventListener('click', () => {
+    console.log('I already press the F.. button what?????')
+    navbar();
+    menu();
+});
 
+const about = document.getElementById('about')
+about.addEventListener('click', ()=>{
+    console.log('I press the F.. button what?????')
+    navbar();
+    home();
+} );
 
 
 /* window.scroll(function(){

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap");
 html,
 body {
   margin: 0;
@@ -10,6 +12,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 62.5%;
   font-size: 10px;
+  background-color: black;
 }
 
 .nav {
@@ -71,14 +74,17 @@ body {
   background-size: cover;
 }
 
-.pozole {
+.pozole, .tacos, .mole {
   position: relative;
-  bottom: -60rem;
+  border-radius: 25px;
+  -webkit-box-shadow: 3px 0px 36px 8px rgba(68, 66, 73, 0.5);
+  box-shadow: 3px 0px 36px 8px rgba(68, 66, 73, 0.5);
+}
+
+.pozole {
+  bottom: -61rem;
   width: 50rem;
   left: 5rem;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 3px 39px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 3px 39px 0px rgba(0, 0, 0, 0.75);
 }
 
 .pozole img {
@@ -86,20 +92,11 @@ body {
   max-height: 28.5rem !important;
 }
 
-.pozole:hover {
-  -webkit-box-shadow: 0px 3px 39px 19px rgba(245, 80, 4, 0.75);
-  box-shadow: 0px 3px 39px 19px rgba(245, 80, 4, 0.75);
-}
-
 .tacos {
-  position: relative;
-  bottom: -31.9rem;
+  bottom: -32.9rem;
   width: 45em;
-  left: 70rem;
+  left: 75rem;
   height: 28.5rem;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 3px 39px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 3px 39px 0px rgba(0, 0, 0, 0.75);
 }
 
 .tacos img {
@@ -108,20 +105,11 @@ body {
   width: 45rem;
 }
 
-.tacos:hover {
-  -webkit-box-shadow: 0px 3px 39px 19px rgba(245, 80, 4, 0.75);
-  box-shadow: 0px 3px 39px 19px rgba(245, 80, 4, 0.75);
-}
-
 .mole {
-  position: relative;
-  bottom: -3.4rem;
+  bottom: -4.4rem;
   width: 45em;
-  left: 130rem;
+  left: 140rem;
   height: 28.5rem;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 3px 39px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 3px 39px 0px rgba(0, 0, 0, 0.75);
 }
 
 .mole img {
@@ -130,9 +118,28 @@ body {
   width: 45rem;
 }
 
-.mole:hover {
-  -webkit-box-shadow: 0px 3px 39px 19px rgba(245, 80, 4, 0.75);
-  box-shadow: 0px 3px 39px 19px rgba(245, 80, 4, 0.75);
+.mole:hover, .tacos:hover, .pozole:hover {
+  -webkit-box-shadow: 0px 3px 39px 19px rgba(250, 250, 250, 0.75);
+  box-shadow: 0px 3px 39px 19px rgba(255, 255, 255, 0.75);
+}
+
+.modal {
+  margin-top: 10rem;
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Notable', sans-serif;
+  color: #0d0e01;
+}
+
+.modal-body {
+  margin: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: justify;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .navTrigger {
@@ -186,7 +193,6 @@ body {
     left: 0;
     bottom: 0;
     background-color: #111;
-    /*same background color of navbar*/
     background-position: center top;
   }
   .nav div.main_list ul li {
@@ -309,7 +315,7 @@ body {
   color: #FAFAFA;
   font-family: 'Lobster', cursive;
   font-size: 8rem;
-  text-shadow: 9px 2px 7px rgba(243, 16, 0, 0.55);
+  text-shadow: 9px 2px 7px rgba(41, 5, 2, 0.55);
 }
 
 @-webkit-keyframes inM {
