@@ -13,8 +13,7 @@ const navbar = () =>{
                                     <ul class="navlinks">
                                         <li><a href="#" id = 'about'>About</a></li>
                                         <li><a href="#" id = 'menu'>Menu</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#" id = 'contact'>Contact</a></li>
                                     </ul>
                                 </div>
                                 <span class="navTrigger">

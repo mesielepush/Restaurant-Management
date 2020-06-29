@@ -1,5 +1,6 @@
 import navbar from './navbar'
 import menu from './menu'
+import contact from './contact'
 const home = () =>{
     const content = document.getElementById('content');
     
@@ -10,10 +11,18 @@ const home = () =>{
                         </div>
                     </section>
 
-                    <div class = 'home' style="height: 1000px">
-                        <div class="container popo">
-                            pipi
-                        </div>                            
+                    <div class = 'home' style="height: 600px">
+                    <div class="home_info d-flex justify-content-center">
+                        <div class="home_in_info">
+                            <span>Chillious Corp.</span>
+                            <p> This explains how perfect and wonderful this restaurant is</p>
+                            <p> You don't believe me? well... you shouldn't</p>
+                            <p>This could be fake you know? </p>
+                            <p>Specially in this times: pandemics, massive public demonstrations...</p>
+                            <p> I mean, you shouldn't trust this whole "reality" thing amirite?</p>
+                            <p>Just buy or food ok? It's nice and all...</p>
+                        </div>
+                    </div>                            
                     </div>
     `;
     content.innerHTML += template;
